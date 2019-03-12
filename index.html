@@ -1,31 +1,183 @@
-<!--Adapted from http://www.matthewclaudel.com-->
-<!-- https://www.technologyreview.com/lists/companies/2017/-->
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Rohan Calum Nuttall</title>
-	<link href="style.css" rel="stylesheet">
-	<style>
-		html {
-			font-family: Times, serif;
-			font-size: 14px;
-			line-height: 18px;
-		}
-		p {color: #000000;}
-		a:link    {color:#000000; background-color:transparent; text-decoration:none}
-		a:visited {color:#000000; background-color:transparent; text-decoration:none}
-		a:hover   {color:#000000; background-color:transparent; text-decoration:none}
-		a:active  {color:#000000; background-color:transparent; text-decoration:none}
-	</style>
+	<meta charset= 'utf-8' />
+	<title>The Age of UBC</title>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
 </head>
-<body>
-	<div id="navigation">
-		<nav>
-			<p><b>ROHAN CALUM NUTTALL</b></p>
-			<p><a href="essays.html">Greenhorn Essays</a></p>
-			<p><a href="initiatives.html">Initiatives</a></p>
-			<p><a href="mailto:rohan.nuttall1@gmail.com" target="_top">Contact</a></p>
-		</nav>
+
+<div id='map'></div>
+<div class='map-overlay' id='features'>
+	<h2 style="text-align: center;">The Age of UBC</h2>
+	<div id = 'pd'>
+		<p>Hover over a building!</p>
 	</div>
+</div>
+<div class='map-overlay' id='legend'></div>
+	
+
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 0.85em;
+  margin: 10px;
+  text-align: left;
+}
+
+/**
+* Create a position for the map
+* on the page */
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/**
+* Set rules for how the map overlays
+* (info box and legend) will be displayed
+* on the page. */
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+#features {
+  top: 0;
+  height: 100px;
+  margin-top: 20px;
+  width: 250px;
+}
+
+#legend {	
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  height: 40px;
+  margin-bottom: 40px;
+  width: 240px;
+
+}
+
+.legend-key {
+  display: inline-block;	
+  border-radius: 0%;
+  width: 20px;
+  height: 10px;
+  margin-right: 0px;
+}
+
+
+</style>
+
+<style >
+	.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+</style>
+
+<body>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoicm9oYW51YmMiLCJhIjoiY2prOHRzaDBtMmtwNzNwbGV1Ymp6ZTl1dCJ9.4kX0iDopYIBHAA5WWlQsDA';
+	//initialize map
+	var map = new mapboxgl.Map({
+	  container: 'map', // container id
+	  style: 'mapbox://styles/rohanubc/cjk8w8hpr8tlh2sqzutyy7pmf' // Age of UBC style url
+	});
+
+	// ensure no code is executred until 'load' event occurs by placing in a callback function 
+	map.on('load', function(){
+		// list of stops in style for legend
+		var layers = ['1911-1918', '1918-1924','1924-1936', '1936-1948', '1948-1956', '1956-1960', '1960-1972', '1972-1983', '1983-1995', '1995-2006', '2006-2017','2017+'];
+
+		var colors = ['#bd0026', '#c3042a', '#e31a1c', '#fc4e2a','#fd8d3c','#feb24d','#ffbb33','#ffd733','#fff633','#ecff33','#bbff33','#71ff33'];
+	    var item = document.createElement('div');
+	    var nextItem = document.createElement('div');
+		for (i = 0; i < colors.length; i++) {
+		  var color = colors[i];
+		  var key = document.createElement('span');
+		  key.className = 'legend-key';
+		  key.style.backgroundColor = color;
+
+		  item.appendChild(key);
+		  legend.appendChild(item);
+		}
+
+		//I really hate the way this is down, but for now I can't come up with a better way.
+		var years = [' 1911 ','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1971&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;','2017 ']
+		for (i=0; i < years.length; i++){
+			var year = years[i];
+			var value = document.createElement('span');
+			value.innerHTML = year;
+			nextItem.appendChild(value);
+			legend.appendChild(nextItem);
+		}
+
+	});
+
+	// when cursor hovers over state, info windows should display the building age for that building. If no building, it should say 'Hover over a building!"
+	map.on('mousemove', function(e) {
+	  var buildings = map.queryRenderedFeatures(e.point, {
+	    layers: ['building_age']
+	  });
+
+	  if (buildings.length > 0) {
+	    document.getElementById('pd').innerHTML = '<h3><strong>' + buildings[0].properties.PLACENAME + '</strong></h3><p><strong>' + 'Year Built: </strong>' + buildings[0].properties.BLDG_AGE + '</p>';
+	  } else {
+	    document.getElementById('pd').innerHTML = '<p>Hover over a building!</p>';
+	  }
+	});
+
+	// When a click event occurs on a feature in the places layer, open a popup at the
+    // location of the feature, with description HTML from its properties.
+    map.on('click', 'building_age', function (e) {
+
+		var h1 = document.createElement('h2');
+		h1.innerHTML="Details on the building go here";
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setDOMContent(h1)
+            //.setHTML(e.features[0].properties.BLDG_AGE)
+            .addTo(map);
+    });
+
+    // Change the cursor to a pointer when the mouse is over the places layer.
+    map.on('mouseenter', 'building_age', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'building_age', function () {
+        map.getCanvas().style.cursor = 'default';
+    });
+
+	map.getCanvas().style.cursor = 'default';
+
+</script>
 </body>
 </html>
