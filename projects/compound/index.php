@@ -41,6 +41,9 @@
         <li class="nav-item">
           <a class="nav-link" href="content/contribute.html">Contribute</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="content/login.html">Login</a>
+
       </ul>
     </div>
   </div>
