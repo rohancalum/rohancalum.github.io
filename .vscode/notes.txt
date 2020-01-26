@@ -1,0 +1,8 @@
+Blog post ideas: 
+- Analysis of Alberta agrivoltaic potential: https://www.goodnewsnetwork.org/crops-thrive-underneath-of-solar-panels/
+
+Jekyll Tutorial: 
+
+- https://jekyllthemes.io/jekyll-blog-themes
+- https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
+- Consider having sites on sites! I.e. for photography, use a different theme. 
