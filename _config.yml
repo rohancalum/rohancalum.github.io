@@ -1,2 +1,3 @@
-	name: Rohan Nuttall
-	markdown: kramdown
+name: Rohan Nuttall
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
