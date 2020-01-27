@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "A test blog post"
-category: "Non-Technical"
+title: "A technical test blog"
+category: "Technical"
 date: 2020-01-26
 ---
 This is a test blog post. 
