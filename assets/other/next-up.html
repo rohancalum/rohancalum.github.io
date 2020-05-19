@@ -15,6 +15,24 @@
     padding: 10px;
     }
 
+    
+BUTTON {
+    text-align: center;
+    font-family: sans-serif;
+    background-color:gold;
+    clear: both;
+    padding: 5px;
+    list-style-type: none;
+    margin: 10px;
+    border-radius: 5px;
+  } 
+
+.button1{
+    float: left;
+    font-size: 20px;
+
+
+}
     .button2 {
     font-family: sans-serif;
     background-color: rgb(88, 197, 233); 
@@ -55,6 +73,16 @@
       padding: 5px;
       margin: 5px;
     }
+
+    .h4 {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 16px;
+      color: rgb(97, 96, 96);
+      padding: 5px;
+      margin: 5px;
+    }
+
 
 
     .name {
@@ -132,19 +160,20 @@
 
 <div class="row">
     <div class="container"><p class="h2">Random Next Person Generator</p></div>
-    <div class="column" style="background-color:rgb(255, 255, 255);">
-    </div>
+    <div class="column" style="background-color:rgb(255, 255, 255);"></div>
     <div class="column" style="background-color:rgb(255, 255, 255);">
         <div class = "container">
-        <div class = "square1"><p class = "name", id="tb" name="tb"></p></div>
+            <div class = "square1"><p class = "name", id="tb" name="tb"></p></div>
         </div>
         <div class="container">
-        <button class="button2" onclick="Skip()">Skip</button> 
-        <button class="button2" onclick="Random()">Next</button> 
+            <button class="button2" onclick="Skip()">Skip</button> 
+            <button class="button2" onclick="Random()">Next</button> 
         </div>
     </div>
     <div class="column" style="background-color:rgb(255, 255, 255);">
         <div class = "h3" id="skipped"></div>
+        <div class = "h4" id="skipped-subtext"></div>
+
         <ul></ul>
         </div>
 </div>
@@ -168,18 +197,43 @@
         }
     }
 
+    // function Skip(){
+    //     var name = document.getElementById('tb').innerHTML
+    //     var skipped_header = document.getElementById('skipped').innerHTML
+    //     if (!skipped_header && name){
+    //         document.getElementById('skipped').innerHTML = "Skipped"
+    //     }
+
+    //     if (name) {
+    //     var ul = document.querySelector("ul");
+    //     var listItem = document.createElement("li");
+    //     listItem.textContent = name;
+    //     ul.appendChild(listItem);
+    //     name = document.getElementById('tb').innerHTML = null;
+    //     name = null
+    // }
+        
+    // }
+
+
     function Skip(){
         var name = document.getElementById('tb').innerHTML
         var skipped_header = document.getElementById('skipped').innerHTML
         if (!skipped_header && name){
             document.getElementById('skipped').innerHTML = "Skipped"
+            document.getElementById('skipped-subtext').innerHTML = "(click to remove)"
+
         }
 
         if (name) {
         var ul = document.querySelector("ul");
-        var listItem = document.createElement("li");
-        listItem.textContent = name;
-        ul.appendChild(listItem);
+        var btn = document.createElement("BUTTON");
+        btn.className = "button1";
+        btn.onclick = function(){
+            btn.style.visibility = "hidden";
+        };
+        btn.innerHTML = name;
+        ul.appendChild(btn);
         name = document.getElementById('tb').innerHTML = null;
         name = null
     }
@@ -190,3 +244,4 @@
 </body>
 
 </html>
+
