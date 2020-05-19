@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Next Up!</title>
   <style>
-
-    .container {
-        text-align: center;
-        margin: auto;
-        color: rgb(216, 53, 53); 
-        padding: 100px;
-        }
-
+    * {
+    box-sizing: border-box;
+    }
     .center {
     text-align: center;
     margin: auto;
@@ -23,13 +20,12 @@
     background-color: rgb(88, 197, 233); 
     color: white;
     border: none;
-    padding: 100px, 100px;
-    text-align: center;
+    padding: 50px, 50px;
+    text-align: right;
     text-decoration: none;
     display: inline-block;
-    font-size: 64px;
+    font-size: 44px;
     transition-duration: 0.4s;
-    margin: 40px 2px;
     border: 3px solid rgb(88, 197, 233);
 
     }
@@ -40,29 +36,116 @@
     border: 2px solid rgb(88, 197, 233);
     }
 
+
+    .h2 {
+      text-align: center;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 32px;
+      color: black;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    .h3 {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 24px;
+      color: black;
+      padding: 5px;
+      margin: 5px;
+    }
+
+
     .name {
+      text-align: center;
       font-family: sans-serif;
       font-size: 64px;
       color: #CCC;
       padding: 5px;
       margin: 5px;
-
     }
-  </style>
+
+    .name:empty {
+
+      padding: 0px;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    .container{
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    ul {
+      padding: 0;
+      display: table;
+      margin: 0 auto;
+    }
+    li {
+      text-align: center;
+      font-family: sans-serif;
+      background-color:gold;
+      float: left;
+      clear: both;
+      padding: 5px;
+      list-style-type: none;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .square1{
+    margin: auto;
+    text-align: center;
+    position: center;
+    margin-right: 100px;
+    height: 200px;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border: 2px solid rgb(88, 197, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+</style>
 </head>
  
 <body>
 
-<div class="container">
-<div class="center"> 
-    <button class="button2" onclick="Random()">Get Next Up!</button>   
+<div class="row">
+    <div class="container"><p class="h2">Random Next Person Generator</p></div>
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+    </div>
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+        <div class = "square1"><p class = "name", id="tb" name="tb"></p></div>
+        <div class="container">
+        <button class="button2" onclick="Skip()">Skip</button> 
+        <button class="button2" onclick="Random()">Next</button> 
+        </div>
+    </div>
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+        <div class = "h3" id="skipped"></div>
+        <ul></ul>
+        </div>
 </div>
 
-<div class="center">
-    <p class = "name", id="tb" name="tb"></p>
-</div>
-
-</div>
   <script>
     var members = ["Matt", "Hager", "Amirmohsen", "Bilal", "Britt", "Callie", "Fatemeh", "Sahir", "Shiva", "Sriram", "Su", "Yunshu", "Rohan"]
     var members_copy = [...members]
@@ -70,7 +153,6 @@
 
         if (members.length == 0 ){
             document.getElementById('tb').innerHTML = "That's all folks!";
-            console.log(members_copy)
             members = [...members_copy]
 
         } else {
@@ -83,10 +165,22 @@
         }
     }
 
-    function myFunction() {
-        var btn = document.createElement("BUTTON");
-        btn.innerHTML = "CLICK ME";
-        document.body.appendChild(btn);
+    function Skip(){
+        var name = document.getElementById('tb').innerHTML
+        var skipped_header = document.getElementById('skipped').innerHTML
+        if (!skipped_header && name){
+            document.getElementById('skipped').innerHTML = "Skipped"
+        }
+
+        if (name) {
+        var ul = document.querySelector("ul");
+        var listItem = document.createElement("li");
+        listItem.textContent = name;
+        ul.appendChild(listItem);
+        name = document.getElementById('tb').innerHTML = null;
+        name = null
+    }
+        
     }
 
   </script>
