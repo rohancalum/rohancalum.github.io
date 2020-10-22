@@ -2,34 +2,88 @@
 layout: default
 title: Rohan Nuttall
 ---
+
+<style>
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+}
+
+.left  {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+</style>
+
+
 <div class="blurb">
-	<h1>Rohan Nuttall</h1>
-	<p> I am currently a graduate student in the <a href="http://rlai.ualberta.ca/" target="_blank">Reinforcement and 
-		Artificial Intelligence Lab</a> at the University of Alberta. My research interests center around two questions: 
-		<ul>
-			<li>How can agents best learn reward and world models of/from human preferences? Can an agent learn to distinguish good from bad?</li>
-			<li>What roles can reinforcement learning play in mitigating climate change impacts and improving
-				institutional decision making?</li>
-		</ul>
-	</p>
-	<p>
-		I'm also interested in equitable education, <a href="http://openroboethics.org/" target="_blank">roboethics</a>, 
-		and how technology can help improve biodiversity, conservation and livelihoods. Previously, I interned with <a href="https://www.kindred.ai/" target="_blank">Kindred Systems</a> and was a
-		research assistant with the <a href="https://blogs.ubc.ca/etalab/" target="_blank">Energy, Technology and 
-		Architecture Lab</a> at the University of British Columbia (UBC). There, I worked on machine 
-		learning models to understand the impacts of future climate change on the built environment. 
-		I also launched a sustainability <a href="https://data.sustain.ubc.ca/" target="_blank">open data portal</a> 
-		for the university.
-	</p>
-	<p> Before this, I enjoyed exploring the world of physics at the University of British Columbia. I learned about the complexities of producing radioisotopes at <a href="https://www.triumf.ca/" target="_blank">TRIUMF</a>, as well as how elegant
-		particle physics experiments are designed with the <a href="https://pienu.triumf.ca/" target="_blank">PIENU collaboration</a>. 
-	</p>
+		<h1>Rohan Nuttall</h1>
+
+		<div class="row">
+			<div class="column left">
+				<p> I am currently a graduate student in the <a href="http://rlai.ualberta.ca/" target="_blank">Reinforcement and 
+				Artificial Intelligence Lab</a> at the University of Alberta. My research interests center around two questions: 
+				<ul>
+					<li>How can agents best learn reward and world models of/from human preferences? Can agents learn to distinguish good from bad?</li>
+					<li>What roles can reinforcement learning play in mitigating climate change impacts and improving
+						institutional decision making?</li>
+				</ul>
+			</p>
+		
+			</div>
+		
+		<div class="column right text-right"><img src="assets/img/a_photo_of_me.png" width="220" height="238"></div>
+		</div>
+
+
+		<div class="row">
+
+		<p>
+			I'm also interested in equitable education, <a href="http://openroboethics.org/" target="_blank">roboethics</a>, 
+			and how technology can help improve biodiversity, conservation and livelihoods. Previously, I interned with <a href="https://www.kindred.ai/" target="_blank">Kindred Systems</a> and was a
+			research assistant with the <a href="https://blogs.ubc.ca/etalab/" target="_blank">Energy, Technology and 
+			Architecture Lab</a> at the University of British Columbia (UBC). There, I worked on machine 
+			learning models to understand the impacts of future climate change on the built environment. 
+			I also launched a sustainability <a href="https://data.sustain.ubc.ca/" target="_blank">open data portal</a> 
+			for the university.
+		</p>
+		<p> Before this, I enjoyed exploring the world of physics at the University of British Columbia. I learned about the complexities of producing radioisotopes at <a href="https://www.triumf.ca/" target="_blank">TRIUMF</a>, as well as how elegant
+			particle physics experiments are designed with the <a href="https://pienu.triumf.ca/" target="_blank">PIENU collaboration</a>. 
+		</p>
+
+		</div>
+
+	
 	
 <!-- 
 	<p>(I like to volunteer and consult for organizations that are working on sustainability challenges. Whether that is building 
 		a career transition portal for Iron & Earth, city biodiversity indicator platform for the Urban Biodiversity Hub, psychological bias
 		framing tools for ClimateMind or machine learning models for companies focussed on the post-carbon transition) 
-	</p> -->
+	</p>
+ -->
 
-
-</div><!-- /.blurb -->
+</div>
