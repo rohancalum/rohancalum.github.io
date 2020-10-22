@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 nav ul {
-    text-align: right;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -43,13 +43,13 @@ h2 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
 }
 
-p ul {
-    font-size: 1.5em;
+div ul li {
+    font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
 }
