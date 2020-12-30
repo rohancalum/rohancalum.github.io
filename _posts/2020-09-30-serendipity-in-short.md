@@ -4,6 +4,7 @@ title: "Serendipity, in short"
 category: "Reflections"
 date: 2020-09-30
 csl: biomed-central.csl
+summary: "A glimpse into the grandiose."
 ---
 
 I can hear the traffic again. The dull droning of tires on tarmac soaks through my bedroom window. A reminder of people going somewhere important. The bookcase is still there, standing at attention with its many ribbons collected over the years. Things, scattered as they were left. Ornaments, odd reminders of places been, sit idly in their place as if lamenting to be returned to the warm gaze of their creator. Everything waits for the persistent tick of the wall clock. For the last two hours, I had hardly noticed any of it. I was glad not to as well, for they all seem rather tedious in the aftermath. A stale dormancy permeates the room as a few motes of dust dance and glint in the lamplight. It might be a shame that serendipity is a rarity in our manufactured world. Yesterday’s footsteps are traced through the same anonymous blur of faces. The corner of 122nd Street is still sharp and grey and concrete. Routine rumbles on. Or, perhaps modern monotony provides the substrate for serendipity to bestow its meaning. 

@@ -5,6 +5,7 @@ category: "Reflections"
 date: 2020-01-28
 bibliography: bibliography.bib
 csl: biomed-central.csl
+summary: "The debate rages on..." 
 ---
 *This entry is a bit of analysis into John R. Searle's paper ["Minds, Brains and Programs"](http://cogprints.org/7150/1/10.1.1.83.5248.pdf){:target="_blank"} published in 1980, and one of its objections. It only seems fitting to explore these important ideas in light of increasing fervour (and optimism, depending on your vantage point) about endowing human-level intelligence in machines. The developments of improved [text generation and language comprehension](https://openai.com/blog/better-language-models/){:target="_blank"}, observing [emergent behaviours in AI systems](https://deepmind.com/blog/article/capture-the-flag-science){:target="_blank"}, [roadmaps towards higher-level reasoning utilizing similar technologies](https://arxiv.org/abs/1709.08568){:targe="blank"} and the unforeseen limits of further progress certainly bring into question the underpinnings of what we conceive to be intelligence, and if we'd realize it should we succeed in building it. It's been 40 years since the publication of Searle's famous "Chinese Room" thought experiment and the issues he contemplates are only more salient today.*
 

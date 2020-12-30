@@ -1,0 +1,25 @@
+---
+layout: default
+title: Thoughts
+---
+
+<h3>{{ page.title }}</h3>
+<ul class="posts">
+	<!-- I should perhaps think about breaking up the blog into "More well thought out" and "Less well thought out"; that might be fun.-->
+	<!-- Need to have categories like "climate", "technical", "other", "etc." and have these as nice tags on each entry-->
+	{% for post in site.posts %}
+	<li class="posts">
+		<div style="margin-top: 20px; margin-bottom: 20px;">
+			<a class="blog" href="{{ post.url }}">
+				<span style="font-weight: 700;">{{ post.title }}</span>
+				<span style="font-weight: 500; opacity: 0.6; margin-left: 5px;">{{ post.date | date_to_string }}</span>
+				<div>
+					<span style="font-size: 15px; font-weight: 200">{{post.summary}}</span>	
+				</div>			
+			</a>
+		</div>
+
+	
+	</li>
+	{% endfor %}
+</ul>

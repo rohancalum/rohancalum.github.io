@@ -4,6 +4,7 @@ title: "Is compassionate policing possible?"
 category: "Reflections"
 date: 2020-06-04
 csl: biomed-central.csl
+summary: "Some reflections on how police departments can reform."
 ---
 
 Since its formation in 1867, the motto of the Minneapolis Police Department has been “To Protect with Courage, To Serve with Compassion!” Recent events related to the murder of George Floyd suggest it may ring hollow. In certain corners of the United States, Black Americans are 2.5 times more likely to be [killed by police officers as white](https://www.aljazeera.com/indepth/interactive/2020/05/mapping-police-killings-black-americans-200531105741757.html){:target="_blank"}. For many Black American, Indigenous, Latino and other racial minorities in the country, compassion from police feels insincere if not completely lacking. In its place, deep frustration, anger, resentment and fear fortified by a history of oppression and violence and provoked by senseless and shameless police brutality has been left to smolder. The past few days have seen those embers turn ablaze, with mass protests igniting from Minneapolis to New York City and solidarity protests in Canada and the United Kingdom. While the media has been occupied with reporting on the violence, peaceful protesters have been calling for the younger generation to [“come up with a better way”](https://twitter.com/g0ldie_teee/status/1266929382708465665){:target="_blank"}.
