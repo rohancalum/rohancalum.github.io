@@ -2,31 +2,224 @@
 layout: default
 title: Research
 ---
+<!-- <script src="../scripts.js"></script> -->
+<!-- Credit to Danijar Hafnar for the great layout design: https://danijar.com/ -->
 
 <div class="blurb">
-    <h1>Papers</h1>
+    <h3>Research</h3>
 	<p> 
-        <ul>
-            <li>Gottipati, S., Pathak, Y.,  <b>Nuttall, R.</b>, Sahir, Chunduru, R., Touati, A.,
-                Subramanian, S. G., Taylor, M.E., Chandar, S. (2020). Maximum reward formulation in reinforcement learning. 
-                NeurIPS Workshop on Deep Reinforcement Learning. [<a href="https://arxiv.org/abs/2010.03744" target="_blank">arXiv</a>] </li>
-            <li>Rysanek, A., <b>Nuttall, R.</b>, & McCarty, J. (2020). Forecasting the impact of climate change on indoor thermal comfort 
-                using a weighted probabilistic ensemble of supervised learning models. Elsevier Energy & Buildings [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132320308891?via%3Dihub" target="_blank">link</a>]</li>
-            <li>Pierce, J. R., Barton, M. A., Tan, M. M. J., Oertel, G., Halder, M. D., Lopez-Guijosa, P. A., & <b>Nuttall, R.</b> (2020). 
-                Actions, indicators, and outputs in urban biodiversity plans: A multinational analysis of city practice. Plos one, 
-                15(7), e0235773. [<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0235773" target="_blank">link</a>]</li> 
-            <li>Mayaud, J. R. & <b>Nuttall, R.</b> (2019). A Job, Indeed! Accessibility equity to advertised employment in Cascadia. Transport Findings. [<a href="https://findingspress.org/article/10791-a-job-indeed-accessibility-equity-to-advertised-employment-in-cascadia" target="_blank">link</a>] </li>
-            <li>Mayaud, J. R., Tran, M., & <b>Nuttall, R.</b> (2019). An urban data framework for assessing equity in cities: Comparing 
-                accessibility to healthcare facilities in Cascadia. Computers, Environment and Urban Systems, 78, 101401. [<a href="https://www.sciencedirect.com/science/article/pii/S0198971519303813" target="_blank">link</a>]
-                </li>
-            <li>Mayaud, J. R., Tran, M., Pereira, R. H., & <b>Nuttall, R.</b> (2019). Future access to essential services in a growing 
-                smart city: The case of Surrey, British Columbia. Computers, Environment and Urban Systems, 73, 1-15. [<a href="https://www.sciencedirect.com/science/article/pii/S0198971518301601" target="_blank">link</a>]
-                </li>
-            <li><b>Nuttall, R.</b> (2018). Beamline Studies for the PIENU Experiment, B.Sc. thesis. [<a href="../assets/449Nuttall-final-copy.pdf" target="_blank">pdf</a>]</li>
-            <li><b>Nuttall, R.</b> (2017). Studies and optimization of diffusion and effusion in TRIUMF's ISAC targets. [<a href="../assets/phys-447-rohan-nuttall.pdf" target="_blank">pdf</a>]</li>
+        <ul class="pub-list">
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/99andBeyond.png">
+                </span>
+                <div>
+                    <h2>
+                        TAC: Towered Actor Critic for Handling Multiple Action Types in Reinforcement Learning for Drug Discovery
+                    </h2>
+                    <span class="venue">
+                        AAAI 2021
+                    </span>
+                    <span class="pub-authors">
+                        Gottipati, S., Pathak, Y., Sattarov, B, . Sahir, <b>Nuttall, R.</b>, Amini, M., Taylor, M., Chandar, S. 
+                    </span>
+                    <div>
+                        <a href="#" class="button">Paper</a>
+                    </div>
+                </div> 
+            </li>
+
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/cirs-hot.png">
+                </span>
+                <div>
+                    <h2>
+                        Forecasting the impact of climate change on thermal comfort using a weighted ensemble of supervised learning models
+                    </h2>
+                    <span class="venue">
+                        Elsevier Building and Environment - 2020
+                    </span>
+                    <span class="pub-authors">
+                        Rysanek, A., <b>Nuttall, R.</b>, & McCarty, J.
+                    </span>
+                    <div>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0360132320308891?via%3Dihub" target="_blank" class="button">Paper</a>
+                    </div>
+                </div> 
+            </li>
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/max-bellman.png">
+                </span>
+
+                <div>
+                    <h2>
+                        Maximum Reward Formulation in Reinforcement Learning
+                    </h2>
+
+                    <span class="venue">
+                        NeurIPS 2020 (Deep RL Workshop)
+                    </span>
+                    <span class="pub-authors">
+                        Gottipati, S., Pathak, Y.,  <b>Nuttall, R.</b>, Sahir, Chunduru, R., Touati, A.,
+                        Subramanian, S. G., Taylor, M.E., Chandar, S.
+                    </span>
+                    <div>
+                        <!-- <a id="myBtn" onclick="loadModal()" class="button">Abstract</a> -->
+                        <a href="https://arxiv.org/abs/2010.03744" target="_blank" class="button">Paper</a>
+                    </div>
+    
+                    <!-- The Modal -->
+                    <!-- https://stackoverflow.com/questions/40896211/javascript-modal-requires-two-clicks-to-open -->
+                    
+                    <!-- <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Reinforcement learning (RL) algorithms typically deal with maximizing the expected cumulative 
+                                return (discounted or undiscounted, finite or infinite horizon). However, several crucial 
+                                applications in the real world, such as drug discovery, do not fit within this framework 
+                                because an RL agent only needs to identify states (molecules) that achieve the highest 
+                                reward within a trajectory and does not need to optimize for the expected cumulative return. 
+                                In this work, we formulate an objective function to maximize the expected maximum reward along a 
+                                trajectory, derive a novel functional form of the Bellman equation, introduce the corresponding 
+                                Bellman operators, and provide a proof of convergence. Using this formulation, we achieve 
+                                state-of-the-art results on the task of molecule generation that mimics a real-world drug 
+                                discovery pipeline.
+                            </p>
+                        </div>
+                    </div> -->
+                </div> 
+            </li>
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/ubhub.png">
+                </span>
+                <div>
+                    <h2>
+                        Actions, indicators, and outputs in urban biodiversity plans: A multinational analysis of city practice                    </h2>
+                    <span class="venue">
+                        Plos One - 2020
+                    </span>
+                    <span class="pub-authors">
+                        Pierce, J. R., Barton, M. A., Tan, M. M. J., Oertel, G., Halder, M. D., Lopez-Guijosa, P. A., & <b>Nuttall, R.</b>                    </span>
+                    <div>
+                        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0235773" target="_blank" class="button">Paper</a>
+                    </div>
+                </div> 
+            </li>
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/transport-findings.png">
+                </span>
+                <div>
+                    <h2>
+                        A Job, Indeed! Accessibility equity to advertised employment in Cascadia
+                    </h2>
+                    <span class="venue">
+                        Transport Findings - 2019
+                    </span>
+                    <span class="pub-authors">
+                        Mayaud, J. R. & <b>Nuttall, R.</b>
+                    </span>
+                    <div>
+                        <a href="https://findingspress.org/article/10791-a-job-indeed-accessibility-equity-to-advertised-employment-in-cascadia" target="_blank" class="button">Paper</a>
+                    </div>
+                </div> 
+            </li>
+
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/urban-data.png">
+                </span>
+                <div>
+                    <h2>
+                        An urban data framework for assessing equity in cities: Comparing 
+                        accessibility to healthcare facilities in Cascadia
+                    </h2>
+                    <span class="venue">
+                        Computers, Environment and Urban Systems - 2019
+                    </span>
+                    <span class="pub-authors">
+                        Mayaud, J. R., Tran, M., & <b>Nuttall, R.</b>
+                    </span>
+                    <div>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0198971519303813" target="_blank" class="button">Paper</a>
+                    </div>
+                </div> 
+            </li>
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/smart-city.png">
+                </span>
+                <div>
+                    <h2>
+                        Future access to essential services in a growing 
+                        smart city: The case of Surrey, British Columbia
+                    </h2>
+                    <span class="venue">
+                        Computers, Environment and Urban Systems - 2019
+                    </span>
+                    <span class="pub-authors">
+                        Mayaud, J. R., Tran, M., Pereira, R. H., & <b>Nuttall, R.</b>
+                    </span>
+                    <div>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0198971518301601" target="_blank" class="button">Paper</a>
+                    </div>
+                </div> 
+            </li>
+
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/bsc-thesis.png">
+                </span>
+                <div>
+                    <h2>
+                        Beamline Studies for the PIENU Experiment
+                    </h2>
+                    <span class="venue">
+                        B.Sc. thesis - 2018
+                    </span>
+                    <span class="pub-authors">
+                        <b>Nuttall, R.</b>
+                    </span>
+                    <div>
+                        <a href="../assets/449Nuttall-final-copy.pdf" target="_blank" class="button">PDF</a>
+                    </div>
+                </div> 
+            </li>
+
+            <li>
+                <span class="pub-image">
+                    <img src="/assets/img/triumf.png">
+                </span>
+                <div>
+                    <h2>
+                        Studies and optimization of diffusion and effusion in TRIUMF's ISAC target                    
+                    </h2>
+                    <span class="venue">
+                        Self-directed study - 2017
+                    </span>
+                    <span class="pub-authors">
+                        <b>Nuttall, R.</b>
+                    </span>
+                    <div>
+                        <a href="../assets/phys-447-rohan-nuttall.pdf" target="_blank" class="button">PDF</a>
+                    </div>
+                </div> 
+            </li>
 
         </ul>
 
 	</p>
 
 </div>
+
