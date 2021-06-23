@@ -6,17 +6,17 @@ date: 2021-06-23
 summary: "How the cultural renaissance of crypto can mitigate negative externalities."
 --- 
 
+*Special thanks to Jake Hirsh-Allen and Jay Singh for valuable comments.*
+
+---
+
 While Dogecoin was capturing imaginations with its 6,000% bull run this year, [Amazon deforestation hit a 12-year high](https://www.bbc.com/news/world-latin-america-55130304), plastic pollution [permeated every corner of the Earth](https://www.nature.com/articles/d41586-021-01143-3), CO2 emissions continued their [steady rise](https://research.noaa.gov/article/ArtMID/587/ArticleID/2764/Coronavirus-response-barely-slows-rising-carbon-dioxide) and our planet's [ice caps deteriorated](https://www.cbc.ca/news/science/biggest-iceberg-1.6033780) faster than ever. For those concerned about "building back better", are blockchain technologies a harmful distraction or a much needed opportunity?
 
 ### **Crypto as a sustainable economy enabler**
 
-In order to move towards a more sustainable economy, we need to make [net-negative technologies](http://net-negative.tech/) a backbone of our society. That is, we need to build circular economies around pulling CO2 out of the atmosphere, incentivize the conservation of ecosystems and adoption of low carbon diets, as well as power the world with clean energy. In order to manage all this, we'll need to reliably [measure, report and verify](https://evo-world.org/en/m-v/what-is-m-v) these activities. Here's where blockchain and cryptocurrencies come in. In this piece, you'll learn about:
+In order to move towards a more sustainable economy, we need to make [net-negative technologies](http://net-negative.tech/) a backbone of our society. That is, we need to build circular economies around pulling CO2 out of the atmosphere, incentivize the conservation of ecosystems and adoption of low carbon diets, as well as power the world with clean energy. In order to manage all this, we'll need to reliably [measure, report and verify](https://evo-world.org/en/m-v/what-is-m-v) these activities. Here's where blockchain and cryptocurrencies come in. In this piece, you'll learn about (1) key applications of blockchain relevant to the climate crisis (2)how the cultural renaissance of crypto can mitigate negative externalities and (3) some thoughts on future prospects. 
 
-1. Key applications of blockchain relevant to the climate crisis
-2. How the cultural renaissance of crypto can mitigate negative externalities   
-3. Some future prospects 
 
----
 
 **Ecosystem conservation**
 
@@ -29,8 +29,7 @@ How do you know who is responsible for what land to conserve? Unreliable mechani
 
 
 ![https://ichef.bbci.co.uk/news/976/cpsprodpb/D289/production/_118779835_067794246.jpg](https://ichef.bbci.co.uk/news/976/cpsprodpb/D289/production/_118779835_067794246.jpg)
-
-[Fears of environmental disaster as oil-laden ship sinks off Sri Lanka (BBC)](https://www.bbc.com/news/world-asia-57327300)
+*[Fears of environmental disaster as oil-laden ship sinks off Sri Lanka (BBC)](https://www.bbc.com/news/world-asia-57327300)*
 
 **Accountability for the oceans**
 
@@ -45,8 +44,7 @@ This year, the Food and Agriculture Organization of the UN (FAO) released a [sta
 As large corporations seek to neutralize their environmental footprints, the carbon credit marketplace has been growing rapidly. However, the process remains obscure with a few actors controlling monitoring and verification. [Regen Network](https://www.regen.network/) is a company seeking to combat this by building [a public carbon marketplace](https://medium.com/chorus-one/regen-network-a-platform-for-climate-finance-3c0353a4874e) to drive regenerative land management. Their blockchain uses the more energy efficient Proof-of-Stake protocol to enable fintech infrastructure for ecological data, assets, and agreements. Their project raised more than [$10.5 million from a private token sale](https://www.banklesstimes.com/2021/04/16/regen-network-sells-out-10-5m-round-launches-regen-ledger/). [Nori](https://nori.com/) is another company that has been established to eliminate the double-counting of carbon credits and [is collaborating with the U.S. Department of Agriculture's](https://techcrunch.com/2020/09/24/nori-is-pitching-carbon-trading-on-the-blockchain/) emissions reductions accounting framework. 
 
 ![https://cdn.vox-cdn.com/thumbor/_NQBPiZIpt3aBhqabeTXqgs5r7g=/0x0:1800x1125/1200x0/filters:focal(0x0:1800x1125):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/9871443/beep.png](https://cdn.vox-cdn.com/thumbor/_NQBPiZIpt3aBhqabeTXqgs5r7g=/0x0:1800x1125/1200x0/filters:focal(0x0:1800x1125):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/9871443/beep.png)
-
-[A microgrid and depiction of sentient computer (Vox)](https://www.vox.com/energy-and-environment/2017/12/15/16714146/greener-more-reliable-more-resilient-grid-microgrids)
+*[A microgrid and depiction of sentient computer (Vox)](https://www.vox.com/energy-and-environment/2017/12/15/16714146/greener-more-reliable-more-resilient-grid-microgrids)*
 
 **Solar energy production and trading**
 
@@ -56,10 +54,10 @@ Similar to how Gainforest and Cryptocorals are using tokens to finance ecosystem
 
 Blockchain protocols are ultimately consensus mechanisms for any kind of data. While the first use cases have been related to financial transactions, the need to reach consensus lies at the heart of all human activity. Climate change has been one of the most challenging issues to establish agreements on. Recognizing the difficulty nations have experienced in meeting the Paris Agreement targets, the [Blockchain for Climate Foundation](https://www.blockchainforclimate.org/) was established in order to enable the implementation of complex border carbon adjustments, national carbon inventory trading and [build trust into carbon markets.](https://www.blockchainforclimate.org/building-trust-in-carbon-markets) 
 
-## Future prospects
+### **Future prospects**
 
 In his political philosophy, Glen Weyl suggests that "[most environmental issues are best seen as conflicts over resources that bring benefits to many people if preserved](https://www.radicalxchange.org/media/blog/2019-12-30-gqx4th/)". If humanity's collective myopia to the [tragedy of the horizon](https://www.bis.org/review/r151009a.pdf) is our greatest threat to long-term prosperity, it's likely that blockchain could provide us with the right social data structure to solve it. Energy networks will be transformed into distributed renewable energy resources, citizens will have more power to see and shape the supply chain they engage with, environmental risks from freight, farming and [mining](https://digit.fyi/hypervine-to-combine-blockchain-and-satellite-data-for-the-mining-industry/) will be mitigated, and markets will emerge from the appropriate taxation of negative externalities.  
 
 The future will see [a new international order](https://www.cambridge.org/core/journals/international-theory/article/fullyautomated-liberalism-blockchain-technology-and-international-cooperation-in-an-anarchic-world/836EA52CCF5662EF1DDA0422528FB6BA) replete with crypto-backed cooperative systems at every level of abstraction from energy trading to environmental regulation. Blockchain will help us better organise the past and the present for the future — a world beyond the shortcomings of 20th century capitalism, where resilience is achieved through accountability, multilateralism, and pluralism. Or maybe all the Dogecoin millionaires will buy lamborghinis instead.
 
-*Special thanks to Jake Hirsh-Allen and Jay Singh for valuable comments.*
+
