@@ -14,7 +14,7 @@ While Dogecoin was capturing imaginations with its 6,000% bull run this year, [A
 
 ### **Crypto as a sustainable economy enabler**
 
-In order to move towards a more sustainable economy, we need to make [net-negative technologies](http://net-negative.tech/) a backbone of our society. That is, we need to build circular economies around pulling CO2 out of the atmosphere, incentivize the conservation of ecosystems and adoption of low carbon diets, as well as power the world with clean energy. In order to manage all this, we'll need to reliably [measure, report and verify](https://evo-world.org/en/m-v/what-is-m-v) these activities. Here's where blockchain and cryptocurrencies come in. In this piece, you'll learn about (1) key applications of blockchain relevant to the climate crisis (2)how the cultural renaissance of crypto can mitigate negative externalities and (3) some thoughts on future prospects. 
+In order to move towards a more sustainable economy, we need to make [net-negative technologies](http://net-negative.tech/) a backbone of our society. That is, we need to build circular economies around pulling CO2 out of the atmosphere, incentivize the conservation of ecosystems and adoption of low carbon diets, as well as power the world with clean energy. In order to manage all this, we'll need to reliably [measure, report and verify](https://evo-world.org/en/m-v/what-is-m-v) these activities. Here's where blockchain and cryptocurrencies come in. In this piece, you'll learn about (1) key applications of blockchain relevant to the climate crisis (2) how the cultural renaissance of crypto can mitigate negative externalities and (3) some thoughts on future prospects. 
 
 
 
