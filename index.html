@@ -1,100 +1,29 @@
----
-layout: default
-title: Rohan Nuttall
----
+<!doctype html>
+<html lang="en" class="has-particle-links">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rohan Nuttall's personal website">
+    <title>Rohan Nuttall</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/particle-links.js" defer></script>
+    <script src="/word-collision.js" defer></script>
+  </head>
 
-<style>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav site-nav--end" aria-label="Primary navigation">
+        <a href="/writing/">Writing</a>
+      </nav>
+    </header>
 
-.column {
-  float: left;
-  width: 33.33%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-}
-
-.left  {
-  width: 70%;
-}
-
-.right {
-  width: 30%;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-
-.column:hover .overlay {
-    opacity: 1;
-  }
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.responsive {
-	width: 100%;
-	height: auto;
-}
-
-img {
-  border-radius: 50%;
-}
-
-</style>
-
-
-<div class="blurb">
-		<h1>Rohan Nuttall</h1>
-		<div class="row">
-			<div class="column left">
-			<p>I currently work at <a href="https://openai.com/" target="_blank">OpenAI</a>. Previously, I studied at the <a href="http://rlai.ualberta.ca/" target="_blank">Reinforcement Learning and 
-				Artificial Intelligence Lab</a>. 
-			<p>
-				I'm interested in how software can improve institutions and mitigate climate change. I advise <a href="https://www.ironandearth.org/" target="_blank">Iron & Earth</a> on climate workforce development. 
-        I'm also a big fan of <a href="http://openclimatefix.org/" target="_blank">Open Climate Fix</a>.
-			</p>
-			<p> 
-				Before this, I enjoyed learning about the complexities of producing radioisotopes at <a href="https://www.triumf.ca/" target="_blank">TRIUMF</a>, as well as how elegant
-				particle physics experiments are designed with the <a href="https://pienu.triumf.ca/" target="_blank">PIENU collaboration</a>. 
-			</p>
-		
-			</div>
-		<!-- <div class="column right text-right">
-			<img src="assets/img/me.png" width="264" height="286" class="responsive">
-		</div> -->
-</div>
+    <main class="home-page">
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title"><span class="word-collision-trigger" data-word-collision>Rohan Nuttall</span></h1>
+        <p>I currently work at <a href="https://openai.com/">OpenAI</a> on model behavior. I care about making intelligence work for people, accelerating energy abundance, and good infrastructure. I'm based in San Francisco.</p>
+        <p>Previously, I studied physics and worked at <a href="https://triumf.ca/">TRIUMF</a>.</p>
+        <p>Reach out <a href="https://x.com/rohancalum">@rohancalum</a> on X or <a href="https://www.linkedin.com/in/rohan-nuttall/">LinkedIn</a>. I occasionally <a href="/writing/">write</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>
