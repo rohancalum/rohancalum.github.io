@@ -122,11 +122,26 @@ a:focus-visible {
   justify-self: start;
 }
 
+.post-row + .post-row {
+  margin-top: 0.65rem;
+}
+
 .essay-date {
   margin-top: 0.55rem;
   color: #67645b;
   font-size: 1rem;
   font-variant-numeric: tabular-nums;
+}
+
+.essay-figure {
+  margin: 2rem 0 0;
+}
+
+.essay-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
 }
 
 .particle-link--active {
