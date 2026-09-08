@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" class="has-particle-links">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jean-Pierre Luminet, black holes, and bringing a 1979 simulation to life.">
+    <link rel="canonical" href="https://rohancalum.github.io/writing/gazing-into-the-computer-part-1.html">
+    <meta property="og:title" content="Gazing into the computer (Part 1)">
+    <meta property="og:description" content="Jean-Pierre Luminet, black holes, and bringing a 1979 simulation to life.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rohancalum.github.io/writing/gazing-into-the-computer-part-1.html">
+    <meta property="og:image" content="https://rohancalum.github.io/writing/images/luminet-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Jean-Pierre Luminet’s hand-drawn simulation of a black hole and its accretion disk.">
+    <meta property="article:published_time" content="2026-09-07">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gazing into the computer (Part 1)">
+    <meta name="twitter:description" content="Jean-Pierre Luminet, black holes, and bringing a 1979 simulation to life.">
+    <meta name="twitter:image" content="https://rohancalum.github.io/writing/images/luminet-share.jpg">
+    <meta name="twitter:image:alt" content="Jean-Pierre Luminet’s hand-drawn simulation of a black hole and its accretion disk.">
+    <title>Gazing into the computer (Part 1) — Rohan Nuttall</title>
+    <link rel="stylesheet" href="/styles.css?v=20260907-2">
+    <script src="/particle-links.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="site-nav site-nav--end" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/writing/">Writing</a>
+      </nav>
+    </header>
+
+    <main class="essay-page">
+      <article>
+        <header>
+          <h1>Gazing into the computer (Part 1)</h1>
+          <p class="essay-date"><time datetime="2026-09-07">September 7, 2026</time></p>
+        </header>
+
+        <p>Nearly 50 years ago, Jean-Pierre Luminet used an IBM mainframe to calculate what a black hole would look like, then drew an image by hand. I find it immensely beautiful. Notably, he used a computer to predict something about the depths of the universe—in this case, the accretion disk of a spherical black hole.</p>
+
+        <figure class="essay-figure">
+          <img
+            class="essay-image"
+            src="/writing/images/luminet-1979.webp"
+            width="1386"
+            height="832"
+            alt="Jean-Pierre Luminet’s hand-drawn simulation of a spherical black hole with a thin accretion disk."
+          >
+        </figure>
+
+        <p>I tasked GPT-6 Astra with bringing it to life (in the browser) with modern methods. It analyzed the image pixel by pixel and recovered 18,465 points to simulate. It read Luminet’s <a href="https://articles.adsabs.harvard.edu/pdf/1979A%26A....75..228L">original paper</a> and studied a 2022 paper called <a href="https://arxiv.org/abs/2211.07469"><cite>Adaptive Analytical Ray Tracing of Black Hole Photon Rings</cite></a> to model Schwarzschild orbits, curved light paths, Doppler shifts, gravitational redshift, and light-travel delays.</p>
+
+        <figure class="essay-figure">
+          <video
+            class="essay-video"
+            controls
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            poster="/writing/images/luminet-animation-first-frame.webp"
+            aria-label="An animated simulation based on Jean-Pierre Luminet’s black hole image"
+          >
+            <source src="/writing/videos/luminet-zoom-pan-v2.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+          </video>
+        </figure>
+
+        <p>Astra achieved this by writing ~14,600 lines of Python simulation code and custom Apple Metal GPU kernels to calculate the relativistic light effects as each dot orbited the black hole.</p>
+      </article>
+    </main>
+  </body>
+</html>

@@ -144,6 +144,14 @@ a:focus-visible {
   margin-inline: auto;
 }
 
+.essay-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+  background: #000;
+}
+
 .particle-link--active {
   color: transparent !important;
   text-decoration-color: transparent !important;
