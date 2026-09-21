@@ -1,14 +1,22 @@
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const hoverCapable = window.matchMedia("(hover: hover) and (pointer: fine)");
 
 for (const preview of document.querySelectorAll("[data-climate-preview]")) {
   const trigger = preview.querySelector(".climate-trigger");
   const video = preview.querySelector("video");
+  const closeButton = preview.querySelector(".climate-preview__close");
   let pinnedOpen = false;
 
   if (!trigger || !video) continue;
 
-  const play = () => {
-    if (reducedMotion.matches) return;
+  if (!hoverCapable.matches && video.dataset.mobileSrc) {
+    video.preload = "metadata";
+    video.src = video.dataset.mobileSrc;
+    video.load();
+  }
+
+  const play = (userInitiated = false) => {
+    if (reducedMotion.matches && !userInitiated) return;
 
     video.play().catch(() => {
       video.controls = true;
@@ -20,10 +28,10 @@ for (const preview of document.querySelectorAll("[data-climate-preview]")) {
     video.currentTime = 0;
   };
 
-  const open = () => {
+  const open = (userInitiated = false) => {
     preview.classList.remove("climate-hover--dismissed");
     preview.classList.add("climate-hover--active");
-    play();
+    play(userInitiated);
   };
 
   const close = () => {
@@ -52,7 +60,7 @@ for (const preview of document.querySelectorAll("[data-climate-preview]")) {
 
     pinnedOpen = true;
     trigger.setAttribute("aria-expanded", "true");
-    open();
+    open(true);
   });
 
   trigger.addEventListener("keydown", (event) => {
@@ -61,13 +69,21 @@ for (const preview of document.querySelectorAll("[data-climate-preview]")) {
     trigger.click();
   });
 
-  preview.addEventListener("pointerenter", open);
-  preview.addEventListener("pointerleave", () => {
-    preview.classList.remove("climate-hover--dismissed");
-    closeIfIdle();
+  closeButton?.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    close();
   });
-  preview.addEventListener("focusin", open);
-  preview.addEventListener("focusout", () => requestAnimationFrame(closeIfIdle));
+
+  if (hoverCapable.matches) {
+    preview.addEventListener("pointerenter", () => open());
+    preview.addEventListener("pointerleave", () => {
+      preview.classList.remove("climate-hover--dismissed");
+      closeIfIdle();
+    });
+    preview.addEventListener("focusin", () => open());
+    preview.addEventListener("focusout", () => requestAnimationFrame(closeIfIdle));
+  }
 
   document.addEventListener("pointerdown", (event) => {
     if (pinnedOpen && !preview.contains(event.target)) close();

@@ -253,6 +253,25 @@ a:focus-visible {
   background: #000;
 }
 
+.climate-preview__close {
+  position: absolute;
+  z-index: 1;
+  top: 0.7rem;
+  right: 0.7rem;
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 50%);
+  border-radius: 50%;
+  background: rgb(20 20 20 / 68%);
+  color: #fff;
+  font: inherit;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .climate-preview__credit {
   display: block;
   margin-top: 0.4rem;
@@ -292,6 +311,23 @@ a:focus-visible {
   .post-row {
     grid-template-columns: 1fr;
     gap: 0.1rem;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .climate-preview {
+    right: 50%;
+    width: min(22rem, calc(100vw - 2rem));
+    transform: translate(50%, -50%) scale(0.98);
+  }
+
+  .climate-hover--active .climate-preview {
+    transform: translate(50%, -50%) scale(1);
+  }
+
+  .climate-preview__close {
+    display: grid;
+    place-items: center;
   }
 }
 
