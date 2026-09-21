@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Speed &amp; scale, faster, by Rohan Nuttall.">
   <title>Speed &amp; scale, faster — Rohan Nuttall</title>
-  <link rel="stylesheet" href="/styles.css?v=20260920-2">
+  <link rel="stylesheet" href="/styles.css?v=20260920-3">
   <script src="/particle-links.js" defer></script>
-  <script src="/climate-preview.js" defer></script>
+  <script src="/climate-preview.js?v=20260920-3" defer></script>
 </head>
 
 <body>
@@ -31,9 +31,11 @@
         <a href="https://climatetechmap.com/">opportunity areas</a> is a great resource for
         learning how to
         <span class="climate-hover" data-climate-preview>
-          <span class="climate-trigger" tabindex="0" aria-describedby="climate-preview-caption">decarbonize
-            civilization</span><span class="climate-preview">
-            <video class="climate-preview__video" muted loop playsinline preload="metadata"
+          <span class="climate-trigger" role="button" tabindex="0" aria-expanded="false"
+            aria-controls="climate-preview" aria-describedby="climate-preview-caption">decarbonize
+            civilization</span><span class="climate-preview" id="climate-preview">
+            <video class="climate-preview__video" muted loop playsinline preload="auto"
+              poster="/writing/images/gistemp-spiral-poster.png"
               aria-label="NASA GISTEMP global temperature spiral">
               <source src="/writing/videos/gistemp-spiral-2x.mp4" type="video/mp4">
             </video>
@@ -57,7 +59,7 @@
         Interfaces determine how you think, so I used Astra and Codex to
         <a href="https://speed-scale-faster.vercel.app/app/">reorganize and extend their website</a>
         to be outcome-first. You can now sort by outcome, see which are most neglected, search by
-        keyword, and rank by quantities.
+        keyword, rank by quantities, and find companies.
       </p>
 
       <figure class="essay-figure">
@@ -89,12 +91,12 @@
       <ol>
         <li>Use Codex to research subproblems, companies and people relevant to each outcome</li>
         <li>Use Codex to determine where LLM-based agents can solve bottlenecks</li>
-        <li>Use Codex to build personalized news for aspiring entrepreneurs</li>
+        <li>Use Codex to build personalized recommendations for aspiring entrepreneurs</li>
       </ol>
 
       <p>
         I hope <a href="https://speed-scale-faster.vercel.app/app/">this interface</a> helps aspiring founders think in terms of which outcomes they are
-        best positioned to drive impact. In a future post, I'll open-source the code for the
+        best positioned to drive impact. If we can identify where AI can accelerate these outcomes, the faster we'll achieve them. In a future post, I'll open-source the code for the
         website, agent-driven research methodology, and enrich each outcome with the findings. Please get in touch if you’re interested in
         this!
       </p>
